@@ -1,15 +1,14 @@
 def decor(func):
-  def wrap():
-    name = input("Enter Name : ")
-    print("=" * (len(name) + 10))
-    func(name)
-    print("=" * (len(name) + 10))
-  return wrap
+	name = input ("Enter Name : ")
+	def wrap():
+		print("=" * (len(name) + 10))
+		print(func(name))
+		print("=" * (len(name) + 10))
+	return wrap
 
-#@decor
+@decor
 def print_text(name):
-    print("  Hello " + name + "!")
+	return f"Hello, {name}!"
 
-print_text = decor(print_text)
 print_text()
 #decorated()

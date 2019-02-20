@@ -1,4 +1,5 @@
-import os, glob
+import os
+import glob
 
 path_a = "C:\\Users\\pisharamsomarajanh\\Desktop\\Excel_Exports\\MP_10msec"
 os.chdir(path_a)
@@ -10,7 +11,7 @@ b = glob.glob('*.xlsx')
 a_only = []
 b_only = []
 
-print("Only in '" + path_a + "'\n" + "=============================") 
+print("Only in '" + path_a + "'\n" + "=============================")
 for fna in a:
     a_flag = 1
     for fnb in b:
@@ -20,7 +21,7 @@ for fna in a:
     if a_flag == 1:
         a_only.append(fna)
         print(fna)
-        
+
 print("\nOnly in '" + path_b + "'\n" + "=============================")
 for fnb in b:
     b_flag = 1
@@ -31,6 +32,3 @@ for fnb in b:
     if b_flag == 1:
         b_only.append(fnb)
         print(fnb)
-        
-            
-        
