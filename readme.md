@@ -1,1 +1,2 @@
-These are a few python snippets that I would add in my python learning material to understand different concepts.
+# About learn-python
+These are a few python code snippets that help to understand different concepts in python.
